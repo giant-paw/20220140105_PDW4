@@ -1,0 +1,137 @@
+/* ROOT */
+:root {
+  --themeRed: #f3606c;
+  --gray: #efefef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Programs */
+
+.programs .container .programs-title {
+  width: 300px;
+  border-bottom: 3px solid var(--themeRed);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.programs .container .iniDate {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.programs {
+  background-color: #e2e2e2;
+}
+
+.programs .box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.programs .box-container .box {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 65px;
+  box-shadow: 0 0 3px #c5c5c5;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.programs .box-container .box .card-img {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.programs .box-container .box .card-img:after {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+
+.programs .box-container .box:nth-child(1) .card-img,
+.programs .box-container .box:nth-child(1) .card-img:after {
+  background-image: url(https://www.unicef.org/uganda/sites/unicef.org.uganda/files/styles/hero_tablet/public/UN0236376.jpg.webp?itok=GMKSRjAu);
+}
+
+.programs .box-container .box:nth-child(2) .card-img,
+.programs .box-container .box:nth-child(2) .card-img:after {
+  background-image: url(https://www.umrelief.org/wp-content/uploads/2022/02/orphan-bg.png);
+}
+
+.programs .box-container .box:nth-child(3) .card-img,
+.programs .box-container .box:nth-child(3) .card-img:after {
+  background-image: url(https://erepublic.brightspotcdn.com/dims4/default/ee9d5b0/2147483647/strip/true/crop/2736x1330+0+0/resize/1440x700!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2Fc9%2F89%2Fa4f2ba914518b216ea9584ce91a0%2Fshutterstock-1888129225.jpg);
+}
+
+.programs .box-container .box:nth-child(4) .card-img,
+.programs .box-container .box:nth-child(4) .card-img:after {
+  background-image: url(https://thegoodbeginning.com/wp-content/uploads/2016/02/c.H.d4.689.Singaly2-535x675.jpg);
+}
+
+.programs .box-container .box:hover .card-img:after {
+  top: 100%;
+}
+
+.programs .box-container .box .programs-card-title {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+.programs .box-container .box .donation-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-top: 10px;
+}
+
+.programs .box-container .box .donation-count spam {
+  color: var(--themeRed);
+}
+
+.programs .box-container .box button {
+  position: absolute;
+  left: 50%;
+  background-color: var(--themeRed);
+  color: #fff;
+  transform: translate(-50%);
+  bottom: px;
+  border-radius: 60px;
+  padding: 15px 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
